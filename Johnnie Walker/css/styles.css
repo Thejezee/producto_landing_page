@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c6a265;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-out 0.2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.products {
+    padding: 5rem 2rem;
+    background: #1a1a1a;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: #222;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.experience {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/api/placeholder/1920/1080');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.journey {
+    padding: 5rem 2rem;
+    background: #1a1a1a;
+    color: white;
+}
+
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.journey-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.journey-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.journey-card:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #000;
+    color: white;
+    padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-section h4 {
+    color: #c6a265;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #c6a265;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #fff; 
+    text-decoration: underline; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #c6a265;
+}
+.cta-button, .explore-button {
+    color: #c6a265;
+    background: none; 
+    border: 1px solid #c6a265;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover, .explore-button:hover {
+    background: #c6a265;
+    color: #fff;
+}
+.cta-button, .explore-button, .product-button {
+    color: #c6a265;
+    background: none;
+    border: 1px solid #c6a265;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover, .explore-button:hover, .product-button:hover {
+    background: #c6a265;
+    color: #fff;
+}
+journey-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-title {
+    color: #c6a265;
+    text-decoration: none; 
+}
+
+.journey-card:hover .card-title {
+    color: #c6a265; /
+}
